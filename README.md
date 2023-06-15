@@ -49,6 +49,6 @@ This structure provides a standardized setup for the new component, including ne
 This project is licensed under the [MIT License](LICENSE.md). Please see the `LICENSE.md` file for more details.
 
 ## Contact 📧
-If you have any questions or suggestions regarding this project, please feel free to reach out to us at [Paolo Ligsay](https://paolomartinligsay.netlify.app/). I would be happy to assist you!
+If you have any questions or suggestions regarding this project, please feel free to reach out to me at [Paolo Ligsay](https://paolomartinligsay.netlify.app/). I would be happy to assist you!
 
 Thank you for your interest in this project. Happy coding! 🎉
