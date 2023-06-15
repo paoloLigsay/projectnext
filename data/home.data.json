@@ -1,0 +1,42 @@
+{ 
+  "pageHead": {},
+  "components": [
+    {
+      "type": "TextArea",
+      "data": {
+        "title": "PROJECT: NEXT",
+        "description": "A comprehensive demonstration of a typical project workflow and the essential dependencies commonly employed in web development. Explore the seamless integration of technologies and gain insights into best practices for efficient development.",
+        "variant": "Home",
+        "newWindow": false,
+        "cta": {
+          "ctaText": "View Articles",
+          "ctaUrl": "/search-article",
+          "ctaType": "link"
+        }
+      }
+    },
+    {
+      "type": "ThreeCardList",
+      "data": {
+        "title": "Popular <br> Reads",
+        "cards": [
+          {
+            "title": "The Project Workflow: Next JS",
+            "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
+            "url": "/the-project-workflow-next-js"
+          },
+          {
+            "title": "Decoding Project Setup",
+            "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
+            "url": "/the-project-workflow-next-js"
+          },
+          {
+            "title": "Unlocking Efficiency: The Atomic Approach",
+            "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
+            "url": "/the-project-workflow-next-js"
+          }
+        ]
+      }
+    }
+  ]
+}

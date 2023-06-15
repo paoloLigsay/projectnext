@@ -1,0 +1,16 @@
+import { render, screen } from '@testing-library/react';
+import { {{pascalCase name}} } from '.';
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.interface';
+import { Default } from './{{pascalCase name}}.stories';
+
+describe('{{pascalCase name}}', () => {
+  it('Should render the {{pascalCase name}}', () => {
+    render(<{{pascalCase name}} 
+      {...(Default.args as {{pascalCase name}}Props)}
+      id="{{pascalCase name}}"
+    />)
+
+    const {{pascalCase name}}{{ pascalCase componentType}} = screen.getByTestId('{{pascalCase name}}');
+    expect({{pascalCase name}}{{ pascalCase componentType}}).toBeInTheDocument();
+  })
+})
