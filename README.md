@@ -2,6 +2,8 @@
 
 Welcome to the Project: Next! This repository contains the code for a project developed using [Next.js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), [Plop](https://plopjs.com/), [Jest](https://jestjs.io/), [Storybook](https://storybook.js.org/), and with an Atomic approach.
 
+<br>
+
 ## Technology Used and Approach 💻
 
 The project utilizes the following technologies and approach:
@@ -14,6 +16,8 @@ The project utilizes the following technologies and approach:
 6. [Storybook](https://storybook.js.org/) - A tool for building and documenting components in isolation, streamlining the design and development workflow.
 7. Atomic Approach - A design methodology that organizes components into atoms, molecules, and organisms for better reusability and maintainability.
 
+<br>
+
 ## Local Setup 🚀
 
 To run this project locally, please follow these steps:
@@ -22,6 +26,8 @@ To run this project locally, please follow these steps:
 2. Install dependencies: `yarn install`
 3. Start the development server: `yarn dev`
 4. Open your preferred browser and navigate to `http://localhost:3000` to see the project in action.
+
+<br>
 
 ## Component Generation 🧩
 
@@ -45,10 +51,17 @@ To generate new components, follow these steps:
 
 This structure provides a standardized setup for the new component, including necessary files for implementation, testing, styling, and interface definition.
 
+<br>
+
 ## License 📄
 This project is licensed under the [MIT License](LICENSE.md). Please see the `LICENSE.md` file for more details.
+
+<br>
 
 ## Contact 📧
 If you have any questions or suggestions regarding this project, please feel free to reach out to me at [Paolo Ligsay](https://paolomartinligsay.netlify.app/). I would be happy to assist you!
 
+<br>
+
 Thank you for your interest in this project. Happy coding! 🎉
+
