@@ -3,13 +3,11 @@ import ctl from '@netlify/classnames-template-literals';
 const styles = {
   container: 'container',
   content: 'content',
+  slider: ctl(`
+    overflow-hidden
 
-  title: ctl(
-    `
-      text-xl
-      font-semibold
-    `
-  )
-}
+    [&>.slick-list>.slick-track]:flex
+  `)
+};
 
 export default styles;

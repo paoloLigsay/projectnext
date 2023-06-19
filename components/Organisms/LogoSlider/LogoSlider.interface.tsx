@@ -1,4 +1,6 @@
 export interface LogoSliderProps {
-  title?: string;
   id?: string;
+  title: string;
+  description?: string;
+  logoCollection: Array<string>;
 }

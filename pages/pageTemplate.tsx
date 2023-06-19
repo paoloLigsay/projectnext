@@ -14,7 +14,7 @@ const PageTemplate = ({ page }: PageProps) => {
         return <Component key={index} {...component.data} />;
       })}
     </>
-  )
-}
+  );
+};
 
 export default PageTemplate;

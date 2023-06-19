@@ -1,4 +1,4 @@
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticPaths } from 'next';
 
 import { PageProps, ParamsProps } from './interface';
 import data from '../data/data.json';
@@ -9,7 +9,7 @@ const Page: React.FC<PageProps> = ({ page }) => {
     return <div>404 - Page Not Found</div>;
   }
 
-  return <PageTemplate page={page} />
+  return <PageTemplate page={page} />;
 };
 
 export const getStaticProps = async ({ params }: ParamsProps) => {
