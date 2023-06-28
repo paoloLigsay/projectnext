@@ -1,7 +1,12 @@
+import { Link } from '@/components/Organisms/Navigation/Navigation.interface';
+
 export interface PageProps {
   page: {
     id: number;
     title: string;
+    navigationData: {
+      links: Array<Link>;
+    };
     components: {
       type: string;
       data: {

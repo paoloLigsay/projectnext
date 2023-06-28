@@ -1,4 +1,20 @@
 {
+  "navigationData": {
+    "links": [
+      {
+        "url": "/",
+        "text": "Home"
+      },
+      {
+        "url": "/search-article",
+        "text": "Articles"
+      },
+      {
+        "url": "/the-purpose-behind-its-creation",
+        "text": "About"
+      }
+    ]
+  },
   "pages": [
     {
       "id": 1,
@@ -8,6 +24,7 @@
           "type": "TextArea",
           "data": {
             "title": "Next JS Development Demo",
+            "variant": "Md",
             "description": "Showcases the capabilities and features of Next.js, providing insights and examples for developers to explore and learn from.",
             "newWindow": false,
             "cta": {
@@ -33,85 +50,19 @@
                 "cardUrl": "/tech-stack-and-dependencies"
               },
               {
-                "cardTitle": "The Purpose Behind its Creation",
-                "cardCopy": "",
-                "cardUrl": "/"
+                "cardTitle": "The Purpose Behind its Creations",
+                "cardCopy": "Explore the motivations behind 'Project Next' and its purpose in showcasing Next.js, React, and more.",
+                "cardUrl": "/the-purpose-behind-its-creation"
               },
               {
                 "cardTitle": "Decoding Project Setup",
-                "cardCopy": "",
-                "cardUrl": "/"
+                "cardCopy": "An in-depth exploration of Decoding Project Setup and an article that uncovers the intricacies of Project Next.",
+                "cardUrl": "/decoding-project-setup"
               },
               {
                 "cardTitle": "Unlocking Efficiency: The Atomic Approach",
-                "cardCopy": "",
-                "cardUrl": "/"
-              },
-              {
-                "cardTitle": "Typescript Interfaces: Empowering Code Flexibility and Consistency",
-                "cardCopy": "",
-                "cardUrl": "/"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "about",
-      "components": [
-        {
-          "type": "TextArea",
-          "data": {
-            "title": "Next JS Development Demo",
-            "description": "Creting Next JS with the following dependencies might make it easier.",
-            "cta": {
-              "ctaText": "View More",
-              "ctaUrl": "/",
-              "ctaType": "link"
-            }
-          }
-        },
-        {
-          "type": "WYSIWYG",
-          "data": {
-            "content": "<h2> Why this Project is Created </h2> <p> This is create to help developers view how NEXT JS is used for front end and how dependecies is used. How a project benefits from these dependeciesshowcase my knowledge of the tech used for front end development. </p> <br> <a class='cta'> Go Home </a>"
-          }
-        },
-        {
-          "type": "TechCards",
-          "data": {
-            "cards": [
-              {
-                "eyebrow": "Framework",
-                "title": "Next JS",
-                "copy": "",
-                "cta": {
-                  "ctaText": "Learn More",
-                  "ctaUrl": "/",
-                  "ctaType": "link"
-                }
-              },
-              {
-                "eyebrow": "Framework",
-                "title": "Next JS",
-                "copy": "",
-                "cta": {
-                  "ctaText": "Learn More",
-                  "ctaUrl": "/",
-                  "ctaType": "link"
-                }
-              },
-              {
-                "eyebrow": "Framework",
-                "title": "Next JS",
-                "copy": "",
-                "cta": {
-                  "ctaText": "Learn More",
-                  "ctaUrl": "/",
-                  "ctaType": "link"
-                }
+                "cardCopy": "An insightful article that explores the benefits of breaking down web components. Discover how this approach enhances development efficiency, fosters reusability, and ensures consistent user experiences.",
+                "cardUrl": "/unlocking-efficiency-the-atomic-approach"
               }
             ]
           }
@@ -126,6 +77,7 @@
           "type": "TextArea",
           "data": {
             "title": "The Project Workflow: Next JS",
+            "variant": "Md",
             "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
             "author": "Paolo Ligsay",
             "newWindow": false,
@@ -139,7 +91,7 @@
         {
           "type": "ArticleContent",
           "data": {
-            "content": "<p>This article explores the project workflow for a <span class='code'>Next.js</span> project combined with <span class='code'>Tailwind</span>, <span class='code'>Storybook</span>, <span class='code'>Plop</span>, <span class='code'>Jest</span>, and other tech stack dependencies. It begins by introducing the project as a demo and provides a link to a separate article that details the tech stack and dependencies used.</p><br /><br /><h2>🔬 Understanding the <span class='code'>Atomic Approach</span></h2><br /><p>To understand the workflow for this project, it is important to grasp the concept of the <span class='code'>Atomic Approach</span>. This approach is further explained in the article titled <a href='/unlockin-efficiency-the-atomic-approach'>Unlocking Efficiency: The Atomic Approach</a>.</p><br /><br /><h2>🚀 Component Generation</h2><br /><p>To get started, open the terminal and run the command <span class='code'>Yarn Generate</span>. This will prompt you to choose the type of component you want to create, such as <span class='code'>Atom</span>, <span class='code'>Molecule</span>, or <span class='code'>Organism</span>. Once selected, the generated component will be placed inside the /components folder. The generated component will consist of various files, including interface.tsx, stories.tsx, styles.tsx, test.tsx, component.tsx, and index.tsx.</p><br /><br /><h2>⚙️ Configuring the Generated Files</h2><br /><p>For a more detailed understanding of the project setup and how to configure the generated files, refer to the article <a href='/decoding-project-setup'>Decoding Project Setup</a>. Each file can be refactored based on your specific needs. Here are some considerations for each file: <br/><br/> <span class='code'>Interface.tsx</span>: Add interfaces and types while removing unnecessary keys. <br/><br/> <span class='code'>component.tsx</span>: Refactor the container and content if a component requires different behavior. <br/><br/> <span class='code'>stories.tsx</span>: Add values inside args: {} to further test the component within Storybook. <br/><br/> <span class='code'>test.tsx</span>: No changes are typically required, but you can add more tests and configure them if needed. <br/><br/> <span class='code'>styles.tsx</span>: This will enhance styles for your component. You can also improve readability using <span class='code'>ctl()</span>, and organize classes on new lines and will still be rendered on a single line. You can also pass parameters using syntax like <span class='code'>title: () => ctl(``)</span>.</p><br /><br /><h2>👀 Previewing Components</h2><br /><p>After configuring the files, you can preview the components in Storybook by running the command <span class='code'>Yarn Storybook</span>. This allows you to test and view the components in an isolated environment.</p><br /><br /><h2>🖥️ Displaying Components on Pages</h2><br /><p>To display the components on actual pages, ensure that the added component is included in the <span class='code'>componentMap</span> file located at <span class='code'>/lib/constants/componentMap.tsx</span>. Once added, the component will be automatically rendered as long as it is present in the <span class='code'>data.json</span> file located at <span class='code'>/data/data.json</span>.</p><br /><br /><h2>🎯 Rendering Process</h2><br /><p>To understand how the rendering process works, examine the <span class='code'>[...slug].tsx</span> file. It showcases how the components are mapped and returns a <span class='code'>404 error</span> if the requested URL does not correspond to a valid page.</p><br /><br /><h2>💡 Conclusion</h2><br /><p>By following this project workflow, developers can efficiently work with <span class='code'>Next.js</span>, <span class='code'>Tailwind</span>, <span class='code'>Storybook</span>, <span class='code'>Plop</span>, <span class='code'>Jest</span>, and other tech stack dependencies while adhering to coding standards and best practices.</p>"
+            "content": "<p>This article explores the project workflow for a <span class='code'>Next.js</span> project combined with <span class='code'>Tailwind</span>, <span class='code'>Storybook</span>, <span class='code'>Plop</span>, <span class='code'>Jest</span>, and other tech stack dependencies. It begins by introducing the project as a demo and provides a link to a separate article that details the tech stack and dependencies used.</p><br /><br /><h2>🔬 Understanding the <span class='code'>Atomic Approach</span></h2><br /><p>To understand the workflow for this project, it is important to grasp the concept of the <span class='code'>Atomic Approach</span>. This approach is further explained in the article titled <a href='/unlocking-efficiency-the-atomic-approach'>Unlocking Efficiency: The Atomic Approach</a>.</p><br /><br /><h2>🚀 Component Generation</h2><br /><p>To get started, open the terminal and run the command <span class='code'>Yarn Generate</span>. This will prompt you to choose the type of component you want to create, such as <span class='code'>Atom</span>, <span class='code'>Molecule</span>, or <span class='code'>Organism</span>. Once selected, the generated component will be placed inside the /components folder. The generated component will consist of various files, including interface.tsx, stories.tsx, styles.tsx, test.tsx, component.tsx, and index.tsx.</p><br /><br /><h2>⚙️ Configuring the Generated Files</h2><br /><p>For a more detailed understanding of the project setup and how to configure the generated files, refer to the article <a href='/decoding-project-setup'>Decoding Project Setup</a>. Each file can be refactored based on your specific needs. Here are some considerations for each file: <br/><br/> <span class='code'>Interface.tsx</span>: Add interfaces and types while removing unnecessary keys. <br/><br/> <span class='code'>component.tsx</span>: Refactor the container and content if a component requires different behavior. <br/><br/> <span class='code'>stories.tsx</span>: Add values inside args: {} to further test the component within Storybook. <br/><br/> <span class='code'>test.tsx</span>: No changes are typically required, but you can add more tests and configure them if needed. <br/><br/> <span class='code'>styles.tsx</span>: This will enhance styles for your component. You can also improve readability using <span class='code'>ctl()</span>, and organize classes on new lines and will still be rendered on a single line. You can also pass parameters using syntax like <span class='code'>title: () => ctl(``)</span>.</p><br /><br /><h2>👀 Previewing Components</h2><br /><p>After configuring the files, you can preview the components in Storybook by running the command <span class='code'>Yarn Storybook</span>. This allows you to test and view the components in an isolated environment.</p><br /><br /><h2>🖥️ Displaying Components on Pages</h2><br /><p>To display the components on actual pages, ensure that the added component is included in the <span class='code'>componentMap</span> file located at <span class='code'>/lib/constants/componentMap.tsx</span>. Once added, the component will be automatically rendered as long as it is present in the <span class='code'>data.json</span> file located at <span class='code'>/data/data.json</span>.</p><br /><br /><h2>🎯 Rendering Process</h2><br /><p>To understand how the rendering process works, examine the <span class='code'>[...slug].tsx</span> file. It showcases how the components are mapped and returns a <span class='code'>404 error</span> if the requested URL does not correspond to a valid page.</p><br /><br /><h2>💡 Conclusion</h2><br /><p>By following this project workflow, developers can efficiently work with <span class='code'>Next.js</span>, <span class='code'>Tailwind</span>, <span class='code'>Storybook</span>, <span class='code'>Plop</span>, <span class='code'>Jest</span>, and other tech stack dependencies while adhering to coding standards and best practices.</p>"
           }
         }
       ]
@@ -152,6 +104,7 @@
           "type": "TextArea",
           "data": {
             "title": "The Project Workflow: Next JS",
+            "variant": "Md",
             "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
             "author": "Paolo Ligsay",
             "newWindow": false,
@@ -166,6 +119,87 @@
           "type": "ArticleContent",
           "data": {
             "content": "<h2>🔥 The Importance of Choosing the Right Tech Dependencies</h2><br><p>Choosing the right tech dependencies is crucial for the success of a project. In this section, we will explore the importance of selecting the appropriate technologies and the advantages they bring.</p><br><p>Next.js, a powerful framework, plays a pivotal role in the project's tech stack. In this section, we will delve into the importance of Next.js and its flexibility in enabling efficient development.</p><br><br><h2>🛠️ Key Technologies and Dependencies</h2><br><p>In this section, we will discuss the specific technologies and dependencies used in the project and their significance. The following are the key components in the project's tech stack:</p><br><p><span class='code'>Tailwind CSS:</span> Rapid UI development and customization through a utility-first CSS framework.</p><br><p><span class='code'>Storybook:</span> Building and documenting components in isolation, facilitating collaboration and streamlining the design and development workflow.</p><br><p><span class='code'>Plop:</span> Automating repetitive tasks and maintaining code consistency, improving productivity.</p><br><p><span class='code'>Jest:</span> Writing comprehensive unit tests for JavaScript applications to ensure code quality and catch bugs early.</p><br><p><span class='code'>Html-react-parser:</span> Parsing and rendering HTML strings as React components, useful for handling dynamic content from external sources.</p><br><p><span class='code'>TypeScript:</span> A statically-typed superset of JavaScript that enhances development safety, productivity, and maintainability.</p><br><br><h2>References for Further Exploration 📚</h2><br><p>To gain more insights into the project's setup process, we recommend referring to the article <a href='/decoding-project-setup'>Decoding Project Setup</a>. You can easily add new functionalities and libraries by running the command <span class='code'> Yarn add __dependency_name </span>. Additionally, for a detailed understanding of component generation and the overall project workflow in Next.js, check out the article titled <a href='/the-project-workflow-next-js'>The Project Workflow: Next JS</a>.</p><br><p>By carefully selecting and utilizing these technologies and dependencies, the project can leverage their advantages, streamline development workflows, and create robust, scalable, and efficient applications.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "the-purpose-behind-its-creation",
+      "components": [
+        {
+          "type": "TextArea",
+          "data": {
+            "title": "The Project Workflow: Next JS",
+            "variant": "Md",
+            "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
+            "author": "Paolo Ligsay",
+            "newWindow": false,
+            "cta": {
+              "ctaText": "Go Back",
+              "ctaUrl": "/search-article",
+              "ctaType": "link"
+            }
+          }
+        },
+        {
+          "type": "ArticleContent",
+          "data": {
+            "content": "<p>🌟 Introducing 'Project Next': Unleashing my talent and expertise in Next.js, React, Tailwind, Storybook, and a suite of other essential dependencies! 🚀</p><br/><p>You might wonder why I created this project 💭 In this article, we will be exploring 'The Purpose Behind its Creation' and delve into the motivations that led me to start this exciting project. 💡. Let's unveil the reasons behind its inception:</p><br/><p>1️⃣ To showcase and share my React and Next.js knowledge: With this project, I aim to demonstrate my skill in React and Next.js, crafting a project that exemplifies the power and potential of these cutting-edge technologies. 🔥</p><br/><p>2️⃣ Embracing the Atomic Approach: Through a series of captivating articles, I'll thoroughly explain the Atomic Approach, dissecting its principles and shedding light on its application within this project. Prepare to dive deep into this fascinating development methodology! ⚛️</p><br/><p>3️⃣ Guiding Fellow Developers: Drawing from my personal experience, I aspire to provide valuable insights into the tools and dependencies I've employed. By sharing my knowledge, I hope to help other developers understand the inner workings of this project and encourage them to leverage these technologies to their fullest potential. 🤝</p><br/><p>4️⃣ Encouraging Collaboration: This project is open-source and available on GitHub for developers to study, analyze, and even fork for their own exploration. Join me in a collaborative learning experience, where we can collectively enhance our skills and push the boundaries of Next.js development! 🌐</p><br/><p>Be sure to check out other articles, where I did a deep dive into the project's creation, breaking down its setup, architecture, and implementation. Together, we'll unlock the secrets behind crafting scalable and efficient applications with Next.js and its ecosystem! 🎉</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "decoding-project-setup",
+      "components": [
+        {
+          "type": "TextArea",
+          "data": {
+            "title": "Decoding Project Setup",
+            "variant": "Md",
+            "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
+            "author": "Paolo Ligsay",
+            "newWindow": false,
+            "cta": {
+              "ctaText": "Go Back",
+              "ctaUrl": "/search-article",
+              "ctaType": "link"
+            }
+          }
+        },
+        {
+          "type": "ArticleContent",
+          "data": {
+            "content": "<p>📝 Welcome to an in-depth exploration of <span class='code'>Decoding Project Setup,</span> an article that delves into the intricacies of <span class='code'>Project Next.</span> This project serves as a showcase for my expertise in Next JS, React, Tailwind, Storybook, and other essential dependencies. Join me on this enlightening journey as we unravel the details of the project's setup and the pivotal role played by <span class='code'>PlopJS.</span></p><br/><p>💡 The workflow of this project revolves around <span class='code'>PlopJS,</span> a powerful tool that streamlines component generation and enhances productivity. Situated within the root directory is the <span class='code'>Plop</span> folder, encompassing the <span class='code'>templates</span> folder and the <span class='code'>plopfile.js</span> file. Together, these elements lay the foundation for efficient component creation.</p><br/><p>🚀 When executing the <span class='code'>'yarn generate'</span> command in the terminal, <span class='code'>PlopJS</span> springs into action, presenting a prompt that guides users through the component generation process. This interactive prompt, driven by the <span class='code'>plopfile.js,</span> allows users to make choices and triggers the necessary actions to generate the desired components.</p><br/><p>✨ Each component generated through <span class='code'>PlopJS</span> is accompanied by a comprehensive set of essential files. These files, defaulted by <span class='code'>PlopJS,</span> serve distinct purposes in the development process:</p><br/><p>1️⃣ The <span class='code'>component.tsx</span> file forms the core of the component, serving as the central point for implementing functionality and incorporating unique features.</p><br/><p>2️⃣ To ensure maintainable code, the <span class='code'>component.interface.tsx</span> file defines the types and interfaces associated with the component. This promotes clarity and facilitates collaborative development.</p><br/><p>3️⃣ For seamless integration with <span class='code'>Storybook,</span> the <span class='code'>component.stories.tsx</span> file provides a dedicated space to showcase the component's capabilities, enabling efficient testing and demonstration.</p><br/><p>4️⃣ To facilitate consistent and scalable styling, the <span class='code'>component.styles.tsx</span> file utilizes <span class='code'>ctl,</span> a styling library that streamlines the process of applying visual aesthetics to the component.</p><br/><p>5️⃣ For thorough and reliable testing, the <span class='code'>component.test.tsx</span> file utilizes the <span class='code'>Jest</span> framework to construct comprehensive test suites, verifying the functionality and integrity of the component.</p><br/><p>6️⃣ Finally, the <span class='code'>index.tsx</span> file serves as the organizational hub for the component, exporting the necessary files and components, ensuring a cohesive and accessible structure.</p><br/><p>📁 The <span class='code'>templates</span> folder, located under <span class='code'>/plop,</span> houses these essential files, meticulously designed to empower developers in crafting exceptional applications. <span class='code'>Decoding Project Setup</span> provides a comprehensive guide to leverage the capabilities of <span class='code'>PlopJS</span> and unlock the full potential of component generation.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "unlocking-efficiency-the-atomic-approach",
+      "components": [
+        {
+          "type": "TextArea",
+          "data": {
+            "title": "Unlocking Efficiency: The Atomic Approach",
+            "variant": "Md",
+            "description": " an insightful article that explores the benefits of breaking down web components. Discover how this approach enhances development efficiency, fosters reusability, and ensures consistent user experiences.",
+            "author": "Paolo Ligsay",
+            "newWindow": false,
+            "cta": {
+              "ctaText": "Go Back",
+              "ctaUrl": "/search-article",
+              "ctaType": "link"
+            }
+          }
+        },
+        {
+          "type": "ArticleContent",
+          "data": {
+            "content": "<p>🔓 Unlocking Efficiency: The Atomic Approach</p><br/><p>📝 In the realm of web development, one methodology has been gaining popularity for its ability to enhance efficiency and maintainability: the Atomic Approach. This article explores the power of this approach and its impact on the development process.</p><br/><p>🔢 The Atomic Approach breaks down components into three distinct categories: Atoms, Molecules, and Organisms. Each category plays a crucial role in creating modular and reusable components.</p><br/><p>💎 Atoms represent the smallest building blocks of a component. These are the individual elements such as buttons, input fields, and icons. By encapsulating these atomic components, developers can achieve a high level of reusability and maintain a consistent design system.</p><br/><p>🧩 Molecules, on the other hand, are reusable components composed of multiple atoms. They are designed to serve specific functionalities and can be combined to create more complex components. Examples of molecules include a WYSIWYG editor, a filter component, or an article card component. By reusing these pre-built molecules, developers can save time and effort, ensuring a consistent user experience across different parts of the application.</p><br/><p>🌐 The highest level in the Atomic Approach hierarchy is Organisms. Organisms encompass entire sections or blocks of a web page. They bring together molecules and atoms to create a cohesive and functional user interface. Examples of organisms could be a navigation bar, a sidebar, or a product listing section. By structuring components in this way, developers can efficiently manage and maintain complex user interfaces.</p><br/><p>💡 The Atomic Approach offers several advantages in both development and design. Firstly, it promotes reusability, allowing developers to save time by leveraging pre-built components across different parts of the application. Additionally, it fosters consistency in both functionality and design, resulting in a unified user experience. Moreover, the Atomic Approach simplifies maintenance and updates, as changes made to atoms and molecules automatically propagate throughout the application.</p><br/><p>🚀 In conclusion, the Atomic Approach revolutionizes web development by breaking down components into smaller, reusable building blocks. By harnessing the power of atoms, molecules, and organisms, developers can create efficient, scalable, and consistent applications. Embracing this methodology empowers teams to unlock efficiency, streamline workflows, and deliver exceptional user experiences.</p>"
           }
         }
       ]

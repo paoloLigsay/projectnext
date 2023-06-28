@@ -1,34 +1,54 @@
 import ctl from '@netlify/classnames-template-literals';
-import { TextAreaVariants } from './TextArea.interface';
+import { TextAreaVariants, AlignmentVariants } from './TextArea.interface';
 
 const ContainerStyles: TextAreaVariants = {
-  Home: `
+  Lg: `
     flex
     flex-col
     justify-center
     h-[60vh]
-    bg-gray-50
+  `,
+  Md: `
+    py-[100px]
   `
-}
+};
 
 const DescriptionStyles: TextAreaVariants = {
-  Default: 'mb-2',
-  Home: 'my-6'
-}
+  Default: 'mt-1 mb-3',
+  Lg: 'my-6 px-8',
+  Md: 'my-4'
+};
+
+const ContentAlignmentStyles: AlignmentVariants = {
+  Left: 'text-left items-start',
+  Right: 'text-right items-end',
+  Center: 'text-center items-center'
+};
 
 const styles = {
-  container: (variant: keyof TextAreaVariants) => ctl(`
+  container: (variant: keyof TextAreaVariants) =>
+    ctl(`
     container py-8
     ${ContainerStyles[variant]}
   `),
-  content: 'content text-center items-center',
+  content: (alignment: keyof AlignmentVariants) =>
+    ctl(`
+      flex
+      flex-col
+      ${ContentAlignmentStyles[alignment]}
+  `),
 
-  title: ctl(`
+  title: (isBold: boolean, className?: string) =>
+    ctl(`
     h2
     mb-2
+
+    ${isBold && 'font-bold'}
+    ${isBold && className}
   `),
-  
-  description: (variant: keyof TextAreaVariants) => ctl(`
+
+  description: (variant: keyof TextAreaVariants) =>
+    ctl(`
     max-w-3xl
 
     ${DescriptionStyles[variant]}

@@ -1,13 +1,30 @@
-{ 
+{
   "pageHead": {},
+  "navigationData": {
+    "links": [
+      {
+        "url": "/",
+        "text": "Home"
+      },
+      {
+        "url": "/search-article",
+        "text": "Articles"
+      },
+      {
+        "url": "/the-purpose-behind-its-creation",
+        "text": "About"
+      }
+    ]
+  },
   "components": [
     {
       "type": "TextArea",
       "data": {
         "title": "PROJECT: NEXT",
         "description": "A comprehensive demonstration of a typical project workflow and the essential dependencies commonly employed in web development. Explore the seamless integration of technologies and gain insights into best practices for efficient development.",
-        "variant": "Home",
+        "variant": "Lg",
         "newWindow": false,
+        "isBold": true,
         "cta": {
           "ctaText": "View Articles",
           "ctaUrl": "/search-article",
@@ -16,9 +33,27 @@
       }
     },
     {
+      "type": "ContentWithImageLayout",
+      "data": {
+        "title": "Code-Centric Focus",
+        "description": "A project where the focus lies on optimizing workflow and ensuring seamless functionality.",
+        "alignment": "Left",
+        "cta": {
+          "ctaText": "See Purpose",
+          "ctaUrl": "/the-purpose-behind-its-creation",
+          "ctaType": "link"
+        },
+        "image": {
+          "url": "/assets/img/working.jpg",
+          "title": "Girl working on a mac laptop."
+        },
+        "imageDescription": "\"Peeking behind the scenes of project development, <br/>Let's decipher the code puzzle!\""
+      }
+    },
+    {
       "type": "ThreeCardList",
       "data": {
-        "title": "Popular <br> Reads",
+        "title": "Popular Reads",
         "cards": [
           {
             "title": "The Project Workflow: Next JS",
@@ -35,6 +70,22 @@
             "description": "Delves into the author's experience and coding standards while working with Next.js, offering insights into effective practices, challenges faced, and solutions discovered.",
             "url": "/the-project-workflow-next-js"
           }
+        ]
+      }
+    },
+    {
+      "type": "LogoSlider",
+      "data": {
+        "title": "Project's Tech Stack",
+        "className": "text-pink-500",
+        "description": "Presenting the Project Tech Stack, a visual representation of the diverse technologies and dependencies employed in the project. ",
+        "logoCollection": [
+          "NextIcon",
+          "ReactIcon",
+          "TypeScriptIcon",
+          "StorybookIcon",
+          "TailwindIcon",
+          "JavascriptIcon"
         ]
       }
     }
