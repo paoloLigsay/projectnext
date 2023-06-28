@@ -15,12 +15,14 @@ const styles = {
       p-8
       bg-gray-100
       shadow-lg
+
+      dark:text-black
     `
   ),
 
   cardTitle: `h4 mb-2 overflow-hidden whitespace-nowrap overflow-ellipsis`,
   cardContent: `flex flex-col`,
   cardDescription: `mt-4 mb-6`
-}
+};
 
 export default styles;

@@ -2,29 +2,37 @@ import { LogoSliderProps } from './LogoSlider.interface';
 import styles from './LogoSlider.styles';
 import Slider from 'react-slick';
 import iconMap from '../../../lib/constants/iconMap';
+import { TextArea } from '../TextArea';
+import { useTheme } from 'next-themes';
 
-export const LogoSlider = ({ title, description, logoCollection }: LogoSliderProps) => {
+export const LogoSlider = ({ title, description, logoCollection, className }: LogoSliderProps) => {
   const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: null,
-    nextArrow: null
+    autoplaySpeed: 0,
+    buttons: false,
+    centerMode: true,
+    cssEase: 'linear',
+    infinite: true,
+    initialSlide: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 3000,
+    variableWidth: true
   };
+
+  const { theme } = useTheme();
 
   return (
     <section className={styles.container}>
-      <div className={styles.content} {...sliderSettings}>
-        <Slider className={styles.slider}>
+      <div className={styles.content}>
+        <TextArea title={title} description={description} cta={null} className={className} />
+        <Slider className={styles.slider} {...sliderSettings}>
           {logoCollection?.map((logo, index) => {
-            const Icon = iconMap[logo];
+            const Icon = iconMap[logo](theme === 'dark');
 
             return (
-              <div>
+              <div key={index} className={styles.sliderIconContainer}>
                 <Icon />
               </div>
             );

@@ -4,6 +4,9 @@ export interface TextAreaProps {
   author?: string;
   newWindow?: boolean;
   variant?: keyof TextAreaVariants;
+  alignment?: keyof AlignmentVariants;
+  isBold?: boolean;
+  className?: string;
   cta: {
     ctaText: string;
     ctaUrl: string;
@@ -13,5 +16,12 @@ export interface TextAreaProps {
 
 export interface TextAreaVariants {
   Default?: string;
-  Home?: string;
+  Lg?: string;
+  Md?: string;
+}
+
+export interface AlignmentVariants {
+  Left?: string;
+  Center?: string;
+  Right?: string;
 }

@@ -6,6 +6,8 @@ const styles = {
 
   link: ctl(`
     uppercase
+    underline
+    underline-offset-4
 
     arrowIcon
   `),
@@ -22,6 +24,6 @@ const styles = {
       hover:bg-pink-600
     `
   )
-}
+};
 
 export default styles;

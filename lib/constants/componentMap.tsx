@@ -1,19 +1,22 @@
-import { TextArea } from '@/components/Organisms/TextArea';
 import { ArticleCards } from '@/components/Organisms/ArticleCards';
 import { ArticleContent } from '@/components/Organisms/ArticleContent';
-import { ThreeCardList } from '@/components/Organisms/ThreeCardList';
+import { ContentWithImageLayout } from '@/components/Organisms/ContentWithImageLayout';
 import { LogoSlider } from '@/components/Organisms/LogoSlider';
+import { TextArea } from '@/components/Organisms/TextArea';
+import { ThreeCardList } from '@/components/Organisms/ThreeCardList';
 
-interface ComponentMap {
-  [key: string]: React.ComponentType<any>;
-}
+// TODO: Encountering error in pageTemplate when defining type
+// interface ComponentMap {
+//   [key: string]: React.ComponentType<any>;
+// }
 
-const componentMap: ComponentMap = {
-  TextArea,
+const componentMap = {
   ArticleCards,
   ArticleContent,
-  ThreeCardList,
-  LogoSlider
+  ContentWithImageLayout,
+  LogoSlider,
+  TextArea,
+  ThreeCardList
 };
 
 export default componentMap;

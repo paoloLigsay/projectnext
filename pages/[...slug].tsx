@@ -16,7 +16,8 @@ export const getStaticProps = async ({ params }: ParamsProps) => {
   const { slug } = params;
   const page = data.pages.find((p) => p.title === slug[0]);
 
-  const pageProp = !page ? null : page;
+  const navigationData = data.navigationData;
+  const pageProp = !page ? null : { ...page, navigationData };
 
   return {
     props: {
