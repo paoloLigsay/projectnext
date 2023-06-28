@@ -1,4 +1,5 @@
 # PROJECT: NEXT ✨
+### Let this be your NextJS Playground!
 
 Welcome to the Project: Next! This repository contains the code for a project developed using [Next.js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), [Plop](https://plopjs.com/), [Jest](https://jestjs.io/), [Storybook](https://storybook.js.org/), and with an Atomic approach.
 
