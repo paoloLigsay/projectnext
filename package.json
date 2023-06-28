@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@netlify/classnames-template-literals": "^1.0.3",
+    "@smakss/react-scroll-direction": "^2.1.1",
     "@types/node": "20.2.5",
     "@types/react": "^18.2.13",
     "@types/react-dom": "18.2.4",
