@@ -2,7 +2,6 @@ import { NavigationProps } from './Navigation.interface';
 import styles from './Navigation.styles';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
-import useDetectScroll from '@smakss/react-scroll-direction';
 
 export const Navigation = ({ primaryLinks }: NavigationProps) => {
   const { theme, setTheme } = useTheme();
@@ -13,15 +12,12 @@ export const Navigation = ({ primaryLinks }: NavigationProps) => {
     setIsNavActive(!isNavActive);
   };
 
-  // Handles window undefined error.
-  const scrollDirection = useDetectScroll({});
-
   useEffect(() => {
     setCurrentTheme(theme);
   }, [theme]);
 
   return (
-    <nav className={styles.nav(scrollDirection)}>
+    <nav className={styles.nav}>
       <div className={styles.navContent}>
         <p className={styles.navLogo}>
           <span>P</span>ROJECT:

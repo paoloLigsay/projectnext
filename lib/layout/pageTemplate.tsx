@@ -1,10 +1,8 @@
-import { PageProps } from './interface';
-import componentMap from '../lib/constants/componentMap';
+import { PageProps } from '../../types/interface';
+import componentMap from '../constants/componentMap';
 import { Navigation } from '@/components/Organisms/Navigation';
 
 const PageTemplate = ({ page }: PageProps) => {
-  console.log('page', page);
-
   return (
     <>
       <Navigation primaryLinks={page?.navigationData?.links || []} />

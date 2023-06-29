@@ -1,8 +1,7 @@
 import { GetStaticPaths } from 'next';
-
-import { PageProps, ParamsProps } from './interface';
+import { PageProps, ParamsProps } from '../types/interface';
 import data from '../data/data.json';
-import PageTemplate from './pageTemplate';
+import PageTemplate from '../lib/layout/pageTemplate';
 
 const Page: React.FC<PageProps> = ({ page }) => {
   if (!page) {
