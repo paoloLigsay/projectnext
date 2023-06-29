@@ -16,7 +16,7 @@ export const ArticleCards = ({ cardBlocks }: ArticleCardsProps) => {
 
   useEffect(() => {
     setcardBlocksFiltered(cardBlocks);
-  }, []);
+  }, [cardBlocks]);
 
   return (
     <section className={styles.container}>

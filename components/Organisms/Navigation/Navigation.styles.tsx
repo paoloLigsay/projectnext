@@ -4,23 +4,20 @@ const styles = {
   container: 'container',
   content: 'content',
 
-  nav: (scrollDirection: string) =>
-    ctl(`
-      transition-all
-      fixed
-      top-0
-      left-0
-      w-full
-      h-auto
-      bg-white
-      px-8
-      z-50
+  nav: ctl(`
+    transition-all
+    fixed
+    top-0
+    left-0
+    w-full
+    h-auto
+    bg-white
+    px-8
+    z-50
+    shadow
 
-      dark:text-white
-      dark:bg-black
-
-      ${scrollDirection}
-      ${(scrollDirection === 'up' || scrollDirection === 'still') && 'shadow'}
+    dark:text-white
+    dark:bg-black
   `),
 
   navContent: ctl(`

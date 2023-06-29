@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import homeData from '../data/home.data.json';
-import { PageProps } from './interface';
-import PageTemplate from './pageTemplate';
+import { PageProps } from '../types/interface';
+import PageTemplate from '../lib/layout/pageTemplate';
 
 const Home: NextPage<PageProps> = ({ page }) => (
   <div>
@@ -16,16 +16,15 @@ const Home: NextPage<PageProps> = ({ page }) => (
   </div>
 );
 
-
 export const getStaticProps = () => {
   /* Imagining we are getting data from an api/backend, but here we provided it via home.data.json */
-  const data = homeData
+  const data = homeData;
 
   return {
     props: {
       page: data
     }
-  }
-}
+  };
+};
 
 export default Home;
