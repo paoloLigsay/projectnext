@@ -13,10 +13,8 @@ export const Navigation = ({ primaryLinks }: NavigationProps) => {
     setIsNavActive(!isNavActive);
   };
 
-  let scrollDirection = 'still';
-
   // Handles window undefined error.
-  typeof window !== 'undefined' && (scrollDirection = useDetectScroll({}));
+  const scrollDirection = useDetectScroll({});
 
   useEffect(() => {
     setCurrentTheme(theme);
