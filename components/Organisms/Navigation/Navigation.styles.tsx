@@ -5,7 +5,6 @@ const styles = {
   content: 'content',
 
   nav: ctl(`
-    transition-all
     fixed
     top-0
     left-0
@@ -32,7 +31,7 @@ const styles = {
     bg-white
 
     lg:justify-start
-    
+
     dark:bg-black
   `),
 
@@ -136,7 +135,7 @@ const styles = {
   navMobileContent: (isNavActive: boolean) =>
     ctl(`
       z-[-1]
-      transition-all
+      transition-[top]
       duration-500
       absolute
       w-full
