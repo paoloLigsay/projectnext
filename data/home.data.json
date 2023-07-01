@@ -85,7 +85,9 @@
           "TypeScriptIcon",
           "StorybookIcon",
           "TailwindIcon",
-          "JavascriptIcon"
+          "JavascriptIcon",
+          "VercelIcon",
+          "NetlifyIcon"
         ]
       }
     }
