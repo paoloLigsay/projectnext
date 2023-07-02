@@ -30,6 +30,19 @@ To run this project locally, please follow these steps:
 
 <br>
 
+Additionally, you can also view the components via Storybook:
+
+1. Run Storybook: `yarn storybook`
+2. View the components on Storybook by navigating to `http://localhost:6006` (Please note that this could change).
+
+Please Note that:
+
+1. Not all components where modified to be viewed on storybook.
+   - Kindly add values inside the `args object` on `stories.tsx` for the component to render.
+   - View `interface.tsx` to check the required and available properties. 
+
+<br>
+
 ## Component Generation 🧩
 
 To generate new components, follow these steps:
