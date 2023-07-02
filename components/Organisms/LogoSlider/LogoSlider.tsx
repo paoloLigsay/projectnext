@@ -4,8 +4,10 @@ import Slider from 'react-slick';
 import iconMap from '../../../lib/constants/iconMap';
 import { TextArea } from '../TextArea';
 import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 
 export const LogoSlider = ({ title, description, logoCollection, className }: LogoSliderProps) => {
+  const [currentTheme, setCurrentTheme] = useState('light');
   const sliderSettings = {
     arrows: false,
     autoplay: true,
@@ -23,13 +25,17 @@ export const LogoSlider = ({ title, description, logoCollection, className }: Lo
 
   const { theme } = useTheme();
 
+  useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <TextArea title={title} description={description} cta={null} className={className} />
         <Slider className={styles.slider} {...sliderSettings}>
           {logoCollection?.map((logo, index) => {
-            const Icon = iconMap[logo](theme === 'dark');
+            const Icon = iconMap[logo](currentTheme === 'dark');
 
             return (
               <div key={index} className={styles.sliderIconContainer}>
