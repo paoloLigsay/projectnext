@@ -7,10 +7,10 @@ export interface PageProps {
     links: Array<Link>;
     footerData: {
       footerText: string;
-      footerLink: {
+      footerLinks: Array<{
         text: string;
         url: string;
-      };
+      }>;
     };
     components: {
       type: string;
