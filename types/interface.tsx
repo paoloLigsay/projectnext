@@ -4,8 +4,13 @@ export interface PageProps {
   page: {
     id: number;
     title: string;
-    navigationData: {
-      links: Array<Link>;
+    links: Array<Link>;
+    footerData: {
+      footerText: string;
+      footerLink: {
+        text: string;
+        url: string;
+      };
     };
     components: {
       type: string;

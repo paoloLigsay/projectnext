@@ -1,20 +1,4 @@
 {
-  "navigationData": {
-    "links": [
-      {
-        "url": "/",
-        "text": "Home"
-      },
-      {
-        "url": "/search-article",
-        "text": "Articles"
-      },
-      {
-        "url": "/the-purpose-behind-its-creation",
-        "text": "About"
-      }
-    ]
-  },
   "pages": [
     {
       "id": 1,
