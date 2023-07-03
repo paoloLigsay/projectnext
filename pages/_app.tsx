@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { GoogleFonts } from 'next-google-fonts';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ThemeProvider attribute="class">
+  <ThemeProvider enableSystem={false} attribute="class">
     <GoogleFonts href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" />
     <Component {...pageProps} />
   </ThemeProvider>
