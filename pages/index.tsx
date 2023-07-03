@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import homeData from '../data/home.data.json';
+import navData from '../data/navigation.data.json';
+import footerData from '../data/footer.data.json';
 import { PageProps } from '../types/interface';
 import PageTemplate from '../lib/layout/pageTemplate';
 
@@ -12,7 +14,7 @@ const Home: NextPage<PageProps> = ({ page }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <PageTemplate page={page} />
+    <PageTemplate page={{ ...page, ...navData, footerData: { ...footerData } }} />
   </div>
 );
 

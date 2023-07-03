@@ -1,0 +1,13 @@
+{
+  "footerText": "Developed and Designed by Paolo Ligsay",
+  "footerLinks": [
+    {
+      "text": "GitHub Repo",
+      "url": "https://github.com/paoloLigsay/projectnext"
+    },
+    {
+      "text": "Portfolio",
+      "url": "https://paolomartinligsay.netlify.app/"
+    }
+  ]
+}
